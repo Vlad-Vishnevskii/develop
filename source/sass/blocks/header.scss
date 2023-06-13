@@ -1,13 +1,101 @@
 .header {
-  padding: 28px 0;
-
-  background-color: $color-neon-blue;
-
   .container {
     display: flex;
+    align-items: center;
+
+    @include vp-720 {
+      padding: 0 5px;
+    }  
+  }
+
+  &__top {
+    padding: 28px 0;
+    background: linear-gradient(90deg, #39ce8e 50%, #4eb7b2 56.56%);
   }
 
   &__logo {
-    color: $color-default-white;
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+
+    @include vp-1023 {      
+      margin-right: 121px;  
+    }
+
+    @include vp-720 {      
+      margin-right: 44px;
+    }
+
+    svg {
+      @include vp-720 {      
+        width: 44px;
+        height: 27px;
+      }
+        
+    }
+  }
+
+  &__search {
+    //margin-left: auto;
+
+    @include vp-1023 {
+      width: 100%;
+      //margin-left: 121px;  
+    }
+
+    @include vp-720 {      
+      //margin-left: 44px;
+    }
+
+    .custom-input {
+      width: 650px;
+
+      @include vp-1023 {
+        width: 100%;  
+      }
+
+      @include vp-720 {
+        width: 100%;
+      }
+
+      input {
+        padding-left: 15px;
+        padding-right: 50px;
+        border: none;
+        background: #f0f1f3;
+        border-radius: 25px;
+        background-image: url("../../img/content/search-icon.png");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 97%;        
+      }
+    }
+  }
+
+  &__auth-block {
+    margin-left: 57px;
+
+    @include vp-1023 {
+      margin-left: 22px;
+    }
+  }
+
+  &__not-auth-icon {
+    display: none;
+    align-items: center;
+  }
+
+  &__auth-icon {
+    display: none;
+    align-items: center;
+  }
+
+  .visible {
+    display: flex;
+  }
+
+  &__bottom {
+    background: #ffffff;
+    border-bottom: 1px solid #d8e1dd;
   }
 }

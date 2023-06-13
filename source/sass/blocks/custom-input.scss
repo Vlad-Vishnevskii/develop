@@ -7,7 +7,7 @@
   padding: size(14px) 0 28px 0;
 
   @media screen and (max-width: 767px) {
-    padding: 4px 0 48px 0;
+    //padding: 4px 0 48px 0;
     width: 100%;
   }
 
@@ -24,7 +24,7 @@
     input,
     textarea {
       flex-grow: 1;
-      max-width: 300px;
+      max-width: 650px;
       min-height: 48px;
       margin-left: auto;
       padding: 10px;
@@ -40,13 +40,13 @@
         width: 100%;
       }
 
-      &:hover {
-        border: 2px solid rgba(#000000, 0.5);
-      }
+      // &:hover {
+      //   border: 2px solid rgba(#000000, 0.5);
+      // }
 
-      &:focus {
-        border: 2px solid rgba(#000000, 0.8);
-      }
+      // &:focus {
+      //   border: 2px solid rgba(#000000, 0.8);
+      // }
     }
   }
 

@@ -1,5 +1,43 @@
 .footer {
   padding: 40px 0;
 
-  background-color: $color-neon-blue;
+  background: linear-gradient(180deg, #39ce8e 0%, #4eb7b2 100%);
+
+  &__top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  &__top-links {
+    display: flex;
+    margin: 0;
+    margin-left: -25px;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__top-link-item {
+    margin-left: 25px;
+  }
+
+  &__top-link {
+    font-size: 15px;
+    line-height: 130%;
+    color: #ffffff;
+  }
+
+  &__bottom {
+    display: grid;
+    grid-template-columns: 270px 1fr 1fr 1fr;
+    column-gap: 20px;
+  }
+
+  &__logo-text {
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 130%;
+    color: #ffffff;
+  }
 }
