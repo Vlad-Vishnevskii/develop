@@ -1,23 +1,29 @@
 .footer {
-  padding: 40px 0;
-
+  padding-top: 45px;
+  padding-bottom: 85px;
   background: linear-gradient(180deg, #39ce8e 0%, #4eb7b2 100%);
 
   &__top {
-    display: flex;
-    flex-wrap: wrap;
+    position: relative;
+    top: 20px;
+    display: flex;    
     justify-content: flex-end;
   }
 
   &__top-links {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    max-width: 820px;
     margin: 0;
+    margin-top: -10px;
     margin-left: -25px;
     padding: 0;
     list-style: none;
   }
 
   &__top-link-item {
+    margin-top: 10px;
     margin-left: 25px;
   }
 
@@ -25,12 +31,19 @@
     font-size: 15px;
     line-height: 130%;
     color: #ffffff;
+
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
   }
 
   &__bottom {
     display: grid;
     grid-template-columns: 270px 1fr 1fr 1fr;
-    column-gap: 20px;
+    gap: 20px;
+    align-items: end;
+    justify-items: center;
   }
 
   &__logo-text {
@@ -39,5 +52,46 @@
     font-size: 13px;
     line-height: 130%;
     color: #ffffff;
+  }
+
+  &__contact-link {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    color: #ffffff;
+    transition: all $trans-default;
+
+    span {
+      margin-left: 15px;
+    }
+
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+  }
+
+  &__ask-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 16px;
+    width: 247px;
+    min-height: 38px;
+    cursor: pointer;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    background: transparent;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #ffffff;
+
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
   }
 }
